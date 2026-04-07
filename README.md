@@ -114,9 +114,19 @@ conda env create --file environment.yml --prefix <Drive>/<env_path>/gaussian_spl
 conda activate <Drive>/<env_path>/gaussian_splatting
 ```
 
-#### Modifications
+#### Deucalion Setup
 
-If you can afford the disk space, we recommend using our environment files for setting up a training environment identical to ours. If you want to make modifications, please note that major version changes might affect the results of our method. However, our (limited) experiments suggest that the codebase works just fine inside a more up-to-date environment (Python 3.8, PyTorch 2.0.0, CUDA 12). Make sure to create an environment where PyTorch and its CUDA runtime version match and the installed CUDA SDK has no major version difference with PyTorch's CUDA version.
+This implementation uses a singularity, and you should change the name of the singularity to whatever you want but change it on this three files: ```create_sing.sh```, ```install.sh``` and ```train_gsplat.sh``` .
+```shell
+./create_sing.sh
+sbatch ./install.sh
+```
+
+### Running on Deucalion
+Inside this script is the call for the training python script you can change the flags as you like see next section for all the possible flags.
+```shell
+sbatch ./train_gsplat.sh
+```
 
 #### Known Issues
 
