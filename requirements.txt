@@ -1,0 +1,9 @@
+# Core dependencies (PyTorch already installed in container)
+numpy
+plyfile
+tqdm
+opencv-python
+joblib
+scipy
+matplotlib
+imageio
