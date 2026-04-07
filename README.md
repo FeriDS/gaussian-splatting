@@ -116,7 +116,7 @@ conda activate <Drive>/<env_path>/gaussian_splatting
 
 #### Deucalion Setup
 
-This implementation uses a singularity, and you should change the name of the singularity to whatever you want but change it on this three files: ```create_sing.sh```, ```install.sh``` and ```train_gsplat.sh``` .
+This implementation uses a singularity, and you should change the PATHS to your own and the name of the singularity to whatever you want but change it on this three files: ```create_sing.sh```, ```install.sh``` and ```train_gsplat.sh``` .
 ```shell
 ./create_sing.sh
 sbatch ./install.sh
